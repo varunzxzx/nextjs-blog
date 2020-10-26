@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "next": "9.5.3",
+    "next-on-netlify": "^2.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "^13.0.0",
