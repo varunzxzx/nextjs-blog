@@ -1,15 +1,13 @@
 backend:
-    name: git-gateway
+    name: test-repo
     branch: master
 media_folder: public/images
 collections:
 - name: "posts"
   label: "Posts"
-  files:
-    - label: "Pre Rendering"
-      name: "pre-rendering"
-      file: "posts/pre-rendering.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
+  folder: "posts"
+  create: true
+  fields:
+    - { label: "Publish Date", name: "date", widget: "datetime" }
+    - { label: "Title", name: "title", widget: "string"}
+    - { label: "Body", name: "body", widget: "markdown"}
