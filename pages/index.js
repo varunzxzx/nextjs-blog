@@ -13,10 +13,13 @@ export default function Home({ allPostsData }) {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          I enjoy building things that live on the internet. I develop
+          exceptional websites and web apps leveraging some cutting edge web
+          technologies with efficient and modern backends. I am both driven and
+          self- motivated. I love to explore new technologies & techniques, and
+          strive to better myself as a developer, and the development community
+          as a whole.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
