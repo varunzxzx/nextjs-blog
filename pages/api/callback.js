@@ -1,6 +1,6 @@
 const client_id = "140ebdfe5e3aef6f4d22";
 const client_secret = "31f97d038896b93955feb44b2720a2be77d4f738";
-const tiny = require("tiny-json-http");
+// const tiny = require("tiny-json-http");
 const tokenUrl = "https://github.com/login/oauth/access_token";
 
 export default async (req, res) => {
@@ -11,14 +11,14 @@ export default async (req, res) => {
   };
 
   try {
-    const { body } = await tiny.post({
-      url: tokenUrl,
-      data,
-      headers: {
-        // GitHub returns a string by default, ask for JSON to make the reponse easier to parse.
-        Accept: "application/json",
-      },
-    });
+    // const { body } = await tiny.post({
+    //   url: tokenUrl,
+    //   data,
+    //   headers: {
+    //     // GitHub returns a string by default, ask for JSON to make the reponse easier to parse.
+    //     Accept: "application/json",
+    //   },
+    // });
     // const body = await fetch(tokenUrl, {
     //   method: 'POST',
     //   body: JSON.stringify(data),
@@ -31,7 +31,7 @@ export default async (req, res) => {
     // .then(res => res.json())
     // .catch(e => console.log('Connection error', e));
     const postMsgContent = {
-      token: body.access_token,
+      token: "body.access_token",
       provider: "github",
     };
 
