@@ -2,8 +2,8 @@ backend:
   name: github
   repo: varunzxzx/nextjs-blog
   open_authoring: true
+  publish_mode: editorial_workflow
 media_folder: public/images
-publish_mode: editorial_workflow
 collections:
 - name: "posts"
   label: "Posts"
