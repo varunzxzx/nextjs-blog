@@ -19,19 +19,19 @@ export default async (req, res) => {
     //     Accept: "application/json",
     //   },
     // });
-    // const body = await fetch(tokenUrl, {
-    //   method: 'POST',
-    //   body: JSON.stringify(data),
-    //   headers: {
-    //     // GitHub returns a string by default, ask for JSON to make the reponse easier to parse.
-    //     "Accept": "application/json",
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
-    // .then(res => res.json())
-    // .catch(e => console.log('Connection error', e));
+    const body = await fetch(tokenUrl, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        // GitHub returns a string by default, ask for JSON to make the reponse easier to parse.
+        "Accept": "application/json",
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .catch(e => console.log('Connection error', e));
     const postMsgContent = {
-      token: "body.access_token",
+      token: body.access_token,
       provider: "github",
     };
 
