@@ -2,7 +2,7 @@ backend:
   name: github
   repo: varunzxzx/nextjs-blog   # Path to your Github/Gitlab repository
   branch: master    # Branch to update
-  base_url: https://focused-mcnulty-017adf.netlify.app/.netlify/functions/server # Path to ext auth provider
+  base_url: https://shimmering-excited-mulberry.glitch.me # Path to ext auth provider
 media_folder: public/images
 collections:
 - name: "posts"
