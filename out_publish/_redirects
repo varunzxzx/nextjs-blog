@@ -1,4 +1,0 @@
-# Next-on-Netlify Redirects
-/api/auth  /.netlify/functions/next_api_auth  200
-/api/callback  /.netlify/functions/next_api_callback  200
-/api/hello  /.netlify/functions/next_api_hello  200
