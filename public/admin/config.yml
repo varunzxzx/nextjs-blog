@@ -3,6 +3,7 @@ backend:
   repo: varunzxzx/nextjs-blog
   open_authoring: true
 media_folder: public/images
+publish_mode: editorial_workflow
 collections:
 - name: "posts"
   label: "Posts"
