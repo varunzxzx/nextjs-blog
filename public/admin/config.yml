@@ -3,6 +3,7 @@ backend:
   repo: varunzxzx/nextjs-blog   # Path to your Github/Gitlab repository
   branch: master    # Branch to update
   base_url: https://shimmering-excited-mulberry.glitch.me # Path to ext auth provider
+  open_authoring: true
 media_folder: public/images
 collections:
 - name: "posts"
