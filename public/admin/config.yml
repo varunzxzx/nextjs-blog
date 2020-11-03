@@ -3,7 +3,7 @@ backend:
   repo: varunzxzx/nextjs-blog
   open_authoring: true
   base_url: https://nextjs-blog-seven-jet.vercel.app
-  auth_endpoint: api
+  auth_endpoint: api/auth
 publish_mode: editorial_workflow
 media_folder: public/images
 collections:
