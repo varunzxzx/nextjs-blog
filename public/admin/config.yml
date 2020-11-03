@@ -2,7 +2,7 @@ backend:
   name: github
   repo: varunzxzx/nextjs-blog
   open_authoring: true
-  base_url: https://shimmering-excited-mulberry.glitch.me
+  base_url: https://nextjs-blog-seven-jet.vercel.app
 publish_mode: editorial_workflow
 media_folder: public/images
 collections:

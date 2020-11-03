@@ -1,5 +1,5 @@
-const client_id = "140ebdfe5e3aef6f4d22";
-const client_secret = "31f97d038896b93955feb44b2720a2be77d4f738";
+const client_id = process.env.OAUTH_CLIENT_ID;
+const client_secret = process.env.OAUTH_CLIENT_SECRET;
 // const tiny = require("tiny-json-http");
 const fetch = require("node-fetch")
 const tokenUrl = "https://github.com/login/oauth/access_token";
